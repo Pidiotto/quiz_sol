@@ -1,0 +1,117 @@
+/* Alinhar o título verticalmente */
+body {
+    background: linear-gradient(to bottom, #222, #FFA500);
+    font-family: 'Arial Rounded MT Bold', sans-serif;
+    color: #FFFFFF;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* Alinhar o conteúdo verticalmente ao centro */
+    height: 100vh;
+    margin: 0;
+}
+
+/* Estilização para a barra de título */
+#header {
+    background: #FFA500;
+    /* Cor de fundo da barra de título */
+    padding: 10px 0;
+    /* Espaçamento interno para o título */
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    /* Define a posição como absoluta */
+    top: 0;
+    /* Fixa a barra de título na parte superior da janela */
+}
+
+/* Estilização para o título h1 */
+h1 {
+    font-size: 36px;
+    margin: 0;
+    color: #FFFFFF;
+}
+
+
+
+button {
+    background-color: #FFA500;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #FF6347;
+}
+
+/* Estilização para o quiz-container */
+#quiz-container {
+    display: flex;
+    flex-direction: column;
+    border: 4px solid #FFA500;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #000;
+    color: #FFA500;
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    opacity: 1;
+    /* Defina a opacidade como 1 para mostrar */
+    transition: opacity 0.3s ease;
+    /* Adicione uma transição suave para a propriedade de opacidade */
+    margin-top: 70px;
+    /* Define uma margem superior para evitar que o conteúdo do quiz encubra a barra de título */
+}
+
+
+#restart-button {
+    display: none;
+}
+
+/* Estilização da logo "Airfix" */
+#logo {
+    background-color: #FFA500;
+    border: 4px solid #000;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Arial Rounded MT Bold', sans-serif;
+    color: #000;
+}
+
+/* Adicione estilos para a fonte das perguntas e respostas */
+#question-text, #explanation-text {
+    font-family: 'Arial Rounded MT Bold', sans-serif;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Estilização para os botões no container */
+#true-button, #false-button, #next-button {
+    font-family: 'Arial Rounded MT Bold', sans-serif;
+    font-size: 20px;
+}
+
+#next-button {
+    display: none;
+    align-self: center;
+    /* Alinha o botão verticalmente ao centro */
+    margin-top: auto;
+    /* Alinha o botão verticalmente ao centro */
+    margin-bottom: 20px;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Quiz Gincana SOL</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Quiz SOL Airfix</h1>
+    </header>
+    <main>
+        <button id="start-button">Iniciar Quiz</button>
+        <div id="quiz-container" style="display: none;">
+            <!-- Definindo display: none; para ocultar o quiz-container no início -->
+            <p id="question-text">Carregando pergunta...</p>
+            <button id="true-button">Verdadeiro</button>
+            <button id="false-button">Falso</button>
+            <p id="explanation-text"></p>
+            <button id="next-button" style="display: none;">Próxima Pergunta</button>
+        </div>
+        <div id="result-container">
+            <p id="score-message" style="display: none;">Pontuação: <span id="score">0</span></p>
+            <button id="restart-button" style="display: none;">Reiniciar Quiz</button>
+        </div>
+    </main>
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
