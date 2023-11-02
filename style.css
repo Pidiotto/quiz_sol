@@ -1,6 +1,6 @@
 /* Alinhar o título verticalmente */
 body {
-    background: linear-gradient(to bottom, #222, #FFA500);
+    background: linear-gradient(to bottom, #222, #e26c2d);
     font-family: 'Arial Rounded MT Bold', sans-serif;
     color: #FFFFFF;
     text-align: center;
@@ -15,7 +15,7 @@ body {
 
 /* Estilização para a barra de título */
 #header {
-    background: #FFA500;
+    background: #e26c2d;
     /* Cor de fundo da barra de título */
     padding: 10px 0;
     /* Espaçamento interno para o título */
@@ -34,10 +34,8 @@ h1 {
     color: #FFFFFF;
 }
 
-
-
 button {
-    background-color: #FFA500;
+    background-color: #e26c2d;
     color: #FFFFFF;
     border: none;
     padding: 10px 20px;
@@ -48,18 +46,18 @@ button {
 }
 
 button:hover {
-    background-color: #FF6347;
+    background-color: #e26c2d;
 }
 
 /* Estilização para o quiz-container */
 #quiz-container {
     display: flex;
     flex-direction: column;
-    border: 4px solid #FFA500;
+    border: 4px solid #e26c2d;
     border-radius: 10px;
     padding: 20px;
     background-color: #000;
-    color: #FFA500;
+    color: #e26c2d;
     text-align: center;
     width: 100%;
     max-width: 800px;
@@ -73,14 +71,13 @@ button:hover {
     /* Define uma margem superior para evitar que o conteúdo do quiz encubra a barra de título */
 }
 
-
 #restart-button {
     display: none;
 }
 
 /* Estilização da logo "Airfix" */
 #logo {
-    background-color: #FFA500;
+    background-color: #e26c2d;
     border: 4px solid #000;
     border-radius: 50%;
     width: 100px;
@@ -117,7 +114,7 @@ button:hover {
 }
 
 #start-button, #restart-button {
-    background-color: #FFA500;
+    background-color: #e26c2d;
     color: #FFFFFF;
     border: none;
     padding: 20px 40px;
@@ -137,4 +134,19 @@ button:hover {
 /* Adicione um estilo de hover para o botão */
 #start-button:hover {
     background-color: #FF6347;
+}
+
+/* Estilização para a pontuação */
+.score-word, .score {
+    font-size: 28px;
+    color: #FFA500;
+    border: 2px solid #FFA500;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+.score {
+    font-size: 28px;
+    margin-left: 5px;
 }
