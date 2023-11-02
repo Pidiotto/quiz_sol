@@ -1,6 +1,21 @@
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./textura-abstrata-de-glitter-preto.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    filter: brightness(0.2);
+    z-index: -1;
+    /* Coloca o elemento pseudo atrás do conteúdo */
+}
+
 /* Alinhar o título verticalmente */
 body {
-    background: linear-gradient(to bottom, #222, #e26c2d);
     font-family: 'Arial Rounded MT Bold', sans-serif;
     color: #FFFFFF;
     text-align: center;
@@ -11,28 +26,50 @@ body {
     /* Alinhar o conteúdo verticalmente ao centro */
     height: 100vh;
     margin: 0;
+    background: #000;
+    /* Cor de fundo preto */
 }
 
-/* Estilização para a barra de título */
-#header {
-    background: #e26c2d;
-    /* Cor de fundo da barra de título */
+
+/* Estilização para o cabeçalho (header) */
+header {
+    background: #FFA500;
+    /* Cor de fundo do cabeçalho */
     padding: 10px 0;
     /* Espaçamento interno para o título */
     width: 100%;
     text-align: center;
-    position: absolute;
-    /* Define a posição como absoluta */
+    position: fixed;
+    /* Define a posição como fixa para que o cabeçalho permaneça no topo da página */
     top: 0;
-    /* Fixa a barra de título na parte superior da janela */
+    /* Fixa o cabeçalho na parte superior da janela */
+    z-index: 1000;
+    /* Garante que o cabeçalho esteja na parte superior (em relação a outros elementos) */
 }
 
-/* Estilização para o título h1 */
-h1 {
-    font-size: 36px;
+/* Estilização para o título h1 no cabeçalho */
+header h1 {
+    font-size: 24px;
     margin: 0;
     color: #FFFFFF;
+    display: inline;
+    position: absolute;
+    /* Define a posição como absoluta para que você possa ajustar o posicionamento */
+    left: 50%;
+    /* Move o título para o meio da tela horizontalmente */
+    transform: translateX(-50%);
+    /* Centraliza o título horizontalmente */
 }
+
+
+#logo img {
+    width: 8rem;
+    /* Tamanho maior para o logotipo */
+    height: auto;
+    /* Altura automática para manter a proporção */
+}
+
+
 
 button {
     background-color: #e26c2d;
@@ -77,8 +114,8 @@ button:hover {
 
 /* Estilização da logo "Airfix" */
 #logo {
-    background-color: #e26c2d;
-    border: 4px solid #000;
+    background-color: transparent;
+    border: 0px solid #000;
     border-radius: 50%;
     width: 100px;
     height: 100px;
@@ -89,7 +126,15 @@ button:hover {
     font-weight: bold;
     font-family: 'Arial Rounded MT Bold', sans-serif;
     color: #000;
+    position: absolute;
+    /* Define a posição como absoluta para que você possa ajustar o posicionamento */
+    left: 50px;
+    /* Ajusta a posição do logotipo no canto esquerdo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 
 /* Adicione estilos para a fonte das perguntas e respostas */
 #question-text, #explanation-text {
@@ -137,16 +182,20 @@ button:hover {
 }
 
 /* Estilização para a pontuação */
-.score-word, .score {
-    font-size: 28px;
-    color: #FFA500;
-    border: 2px solid #FFA500;
+#result-container .score-word {
+    font-size: 1rem;
+    color: #f5f2ec;
+    border: 0px solid #FFA500;
     border-radius: 5px;
     display: inline-block;
     padding: 5px 10px;
 }
 
 .score {
-    font-size: 28px;
+    font-size: 5rem;
     margin-left: 5px;
+    color: #47ff66;
+    border: 2px solid #FFA500;
+    border-radius: 10px;
+    padding: 5px 10px;
 }
