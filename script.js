@@ -42,7 +42,10 @@ function endQuiz() {
     restartButton.style.display = "block";
     startButton.style.display = "none";
     explanationText.textContent = '';
-    nextButton.style.display = "none"; // Oculta o botão "Próxima Pergunta" ao finalizar o quiz
+    nextButton.style.display = "none";
+
+    // Adiciona uma classe para aplicar a animação à pontuação
+    scoreDisplay.classList.add('score-animation');
 }
 
 function restartQuiz() {
