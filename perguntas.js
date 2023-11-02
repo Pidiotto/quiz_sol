@@ -159,6 +159,14 @@ const questions = [
             incorrect: "Incorreto. A exposição prolongada ao ruído pode ser prejudicial à audição; a proteção auditiva é importante."
         }
     },
+    {
+        question: "21. A sigla 'SOL' significa 'Segurança Organização e Logística'",
+        answer: false,
+        explanation: {
+            correct: "Correto! O significado de SOL é Segurança Organização e Limpeza.",
+            incorrect: "Incorreto. O significado de SOL é Segurança Organização e Limpeza."
+        }
+    },
     // Adicione mais perguntas e explicações conforme necessário
 ];
 
