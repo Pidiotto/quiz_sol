@@ -1,10 +1,10 @@
 const questions = [
     {
-        question: "1. A cor das lixeiras de reciclagem é verde.",
+        question: "1. A lixeira de cor VERDE é para VIDRO",
         answer: true,
         explanation: {
-            correct: "Correto! As lixeiras de reciclagem geralmente são verdes.",
-            incorrect: "Incorreto. As lixeiras de reciclagem são geralmente verdes."
+            correct: "Correto! As lixeiras de cor verde são para VIDRO.",
+            incorrect: "Incorreto. As lixeiras de cor verde são para VIDRO."
         }
     },
     {
@@ -88,11 +88,11 @@ const questions = [
         }
     },
     {
-        question: "12. A cor das lixeiras de reciclagem é azul.",
+        question: "12. As lixeiras de cor AZUL são para PLASTICO",
         answer: true,
         explanation: {
-            correct: "Correto! As lixeiras de reciclagem geralmente são azuis.",
-            incorrect: "Incorreto. As lixeiras de reciclagem geralmente são azuis."
+            correct: "Incorreto! As lixeiras de cor AZUL são para PAPEL/PAPELÃO.",
+            incorrect: "Correto! As lixeiras de cor AZUL são para PAPEL/PAPELÃO."
         }
     },
     {
